@@ -6,7 +6,7 @@ const TERRACE_IMG = "https://cdn.poehali.dev/projects/09a5441f-de31-45db-b399-e9
 const SPREAD_IMG = "https://cdn.poehali.dev/projects/09a5441f-de31-45db-b399-e91316d95c39/files/97090c66-fcf9-4fbb-8426-1676b4fac0e3.jpg";
 
 const MENU_ITEMS = [
-  { id: 1, name: "Шашлык из баранины", weight: "300г", price: 590, tag: "Хит", emoji: "🐑", desc: "Молодой ягнёнок, кавказские специи, маринад 24ч" },
+  { id: 1, name: "Шашлык из баранины", weight: "300г", price: 500, tag: "Хит", emoji: "🐑", desc: "Молодой ягнёнок, кавказские специи, маринад 24ч" },
   { id: 2, name: "Шашлык из свинины", weight: "350г", price: 390, tag: "", emoji: "🐷", desc: "Шейная часть, лук, пиво, чёрный перец" },
   { id: 3, name: "Курица на мангале", weight: "400г", price: 380, tag: "Новинка", emoji: "🍗", desc: "Целые бёдрышки, аджика, чеснок" },
   { id: 4, name: "Люля-кебаб", weight: "300г", price: 420, tag: "", emoji: "🥩", desc: "Смешанный фарш, зелень, специи на шпаге" },
