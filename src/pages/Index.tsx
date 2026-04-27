@@ -6,14 +6,18 @@ const TERRACE_IMG = "https://cdn.poehali.dev/projects/09a5441f-de31-45db-b399-e9
 const SPREAD_IMG = "https://cdn.poehali.dev/projects/09a5441f-de31-45db-b399-e91316d95c39/files/97090c66-fcf9-4fbb-8426-1676b4fac0e3.jpg";
 
 const MENU_ITEMS = [
-  { id: 1, name: "Шашлык из баранины", weight: "300г", price: 500, tag: "Хит", emoji: "🐑", desc: "Молодой ягнёнок, кавказские специи, маринад 24ч" },
-  { id: 2, name: "Шашлык из свинины", weight: "300г", price: 390, tag: "", emoji: "🐷", desc: "Шейная часть, лук, чёрный перец" },
-  { id: 3, name: "Шашлык из говядины", weight: "300г", price: 500, tag: "", emoji: "🥩", desc: "Отборная говядина, натуральные специи" },
-  { id: 4, name: "Курица на мангале", weight: "300г", price: 330, tag: "", emoji: "🍗", desc: "Бёдрышки или грудка, аджика, чеснок" },
-  { id: 5, name: "Шашлык из индейки", weight: "300г", price: 400, tag: "", emoji: "🦃", desc: "Нежное мясо индейки, прованские травы" },
-  { id: 6, name: "Люля говяжий", weight: "300г", price: 330, tag: "", emoji: "🥩", desc: "Говяжий фарш, лук, зелень на шпаге" },
-  { id: 7, name: "Люля баранина", weight: "300г", price: 330, tag: "", emoji: "🐑", desc: "Бараний фарш, кинза, кавказские специи" },
-  { id: 8, name: "Люля свинина", weight: "300г", price: 330, tag: "", emoji: "🐷", desc: "Свиной фарш, лук, чёрный перец" },
+  { id: 1, name: "Шашлык из индейки", weight: "200г", price: 430, tag: "Хит", emoji: "🦃", desc: "Нежное мясо индейки на мангале" },
+  { id: 2, name: "Шашлык из свинины (Лопатка)", weight: "230г", price: 380, tag: "", emoji: "🐷", desc: "Сочная свиная лопатка на углях" },
+  { id: 3, name: "Куриная грудка", weight: "200г", price: 360, tag: "", emoji: "🍗", desc: "Куриная грудка на мангале" },
+  { id: 4, name: "Комплексный обед", weight: "", price: 350, tag: "", emoji: "🍱", desc: "Сытный комплекс — выгодно и вкусно" },
+  { id: 5, name: "Фри", weight: "130г", price: 180, tag: "", emoji: "🍟", desc: "Хрустящий картофель фри" },
+  { id: 6, name: "Лаваш", weight: "", price: 50, tag: "", emoji: "🫓", desc: "Свежий тонкий лаваш" },
+  { id: 7, name: "Селёдка под шубой", weight: "150г", price: 160, tag: "", emoji: "🥗", desc: "Классический салат" },
+  { id: 8, name: "Сибирячка", weight: "150г", price: 160, tag: "", emoji: "🥗", desc: "Фирменный салат" },
+  { id: 9, name: "Соус острый", weight: "", price: 40, tag: "", emoji: "🌶️", desc: "Острый соус к шашлыку" },
+  { id: 10, name: "Соус сырный", weight: "", price: 50, tag: "", emoji: "🧀", desc: "Нежный сырный соус" },
+  { id: 11, name: "Соус чесночный", weight: "", price: 50, tag: "", emoji: "🧄", desc: "Ароматный чесночный соус" },
+  { id: 12, name: "Соус шашлычный", weight: "", price: 40, tag: "", emoji: "🍶", desc: "Фирменный шашлычный соус" },
 ];
 
 type CartItem = { id: number; name: string; price: number; qty: number };
