@@ -65,7 +65,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <button onClick={() => setActiveSection("home")} className="font-oswald text-2xl font-bold text-[hsl(var(--fire))] glow-text tracking-wider">
-            🔥 МАНГАЛ ХАУС
+            🔥 ШАШЛЫК ХАУС
           </button>
 
           <div className="hidden md:flex items-center gap-6">
@@ -509,7 +509,7 @@ export default function Index() {
 
       {/* FOOTER */}
       <footer className="border-t border-border py-8 px-4 text-center">
-        <div className="font-oswald text-[hsl(var(--fire))] text-xl glow-text mb-2">🔥 МАНГАЛ ХАУС</div>
+        <div className="font-oswald text-[hsl(var(--fire))] text-xl glow-text mb-2">🔥 ШАШЛЫК ХАУС</div>
         <p className="font-golos text-foreground/40 text-sm">© 2008–2026 · Настоящий шашлык с любовью</p>
       </footer>
     </div>
