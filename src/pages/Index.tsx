@@ -14,10 +14,10 @@ const MENU_ITEMS = [
   { id: 6, name: "Лаваш", weight: "", price: 50, tag: "", emoji: "🫓", desc: "Свежий тонкий лаваш" },
   { id: 7, name: "Селёдка под шубой", weight: "150г", price: 160, tag: "", emoji: "🥗", desc: "Классический салат" },
   { id: 8, name: "Сибирячка", weight: "150г", price: 160, tag: "", emoji: "🥗", desc: "Фирменный салат" },
-  { id: 9, name: "Соус острый", weight: "", price: 40, tag: "", emoji: "🌶️", desc: "Острый соус к шашлыку" },
+  { id: 9, name: "Соус острый", weight: "", price: 50, tag: "", emoji: "🌶️", desc: "Острый соус к шашлыку" },
   { id: 10, name: "Соус сырный", weight: "", price: 50, tag: "", emoji: "🧀", desc: "Нежный сырный соус" },
   { id: 11, name: "Соус чесночный", weight: "", price: 50, tag: "", emoji: "🧄", desc: "Ароматный чесночный соус" },
-  { id: 12, name: "Соус шашлычный", weight: "", price: 40, tag: "", emoji: "🍶", desc: "Фирменный шашлычный соус" },
+  { id: 12, name: "Соус шашлычный", weight: "", price: 50, tag: "", emoji: "🍶", desc: "Фирменный шашлычный соус" },
 ];
 
 type CartItem = { id: number; name: string; price: number; qty: number };
@@ -142,7 +142,7 @@ export default function Index() {
           <div className="relative z-10 text-center max-w-4xl px-4 pt-20">
             <div className="animate-fade-in-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
               <span className="inline-block font-golos text-[hsl(var(--ember))] text-sm tracking-[0.3em] uppercase mb-6 border border-[hsl(var(--fire))]/40 px-4 py-2 rounded-full bg-[hsl(var(--fire))]/10">
-                🔥 Мясо на живом огне с 2008 года
+                🔥 Мясо на живом огне с 2015 года
               </span>
             </div>
 
@@ -175,7 +175,7 @@ export default function Index() {
 
             <div className="grid grid-cols-3 gap-6 mt-16 animate-fade-in-up" style={{ animationDelay: "0.5s", opacity: 0 }}>
               {[
-                { n: "15+", label: "Лет работы" },
+                { n: "10+", label: "Лет работы" },
                 { n: "50к+", label: "Довольных гостей" },
                 { n: "45 мин", label: "Доставка" },
               ].map(s => (
@@ -358,7 +358,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="font-golos text-foreground/70 text-lg leading-relaxed mb-6">
-                Мангал Хаус открылся в 2008 году с одной идеей: готовить шашлык так, как это делали наши деды — на фруктовых дровах, с любовью и терпением.
+                Шашлык Хаус открылся в 2015 году с одной идеей: готовить шашлык так, как это делали наши деды — на фруктовых дровах, с любовью и терпением.
               </p>
               <p className="font-golos text-foreground/70 text-lg leading-relaxed mb-6">
                 Мы маринуем мясо минимум 12 часов, используем только свежие продукты от местных фермеров и не добавляем никаких усилителей вкуса.
@@ -370,7 +370,7 @@ export default function Index() {
             <div className="relative">
               <img src={TERRACE_IMG} alt="Ресторан" className="rounded-3xl w-full aspect-square object-cover" />
               <div className="absolute -bottom-4 -left-4 bg-[hsl(var(--fire))] text-background font-oswald text-2xl font-bold px-6 py-4 rounded-2xl">
-                15+ лет<br /><span className="text-sm font-golos font-normal opacity-80">традиций</span>
+                10+ лет<br /><span className="text-sm font-golos font-normal opacity-80">традиций</span>
               </div>
             </div>
           </div>
@@ -514,7 +514,7 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border py-8 px-4 text-center">
         <div className="font-oswald text-[hsl(var(--fire))] text-xl glow-text mb-2">🔥 ШАШЛЫК ХАУС</div>
-        <p className="font-golos text-foreground/40 text-sm">© 2008–2026 · Настоящий шашлык с любовью</p>
+        <p className="font-golos text-foreground/40 text-sm">© 2015–2026 · Настоящий шашлык с любовью</p>
       </footer>
     </div>
   );
