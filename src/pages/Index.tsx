@@ -264,8 +264,8 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {[
-              { type: "delivery" as DeliveryType, icon: "Truck", title: "Доставка", price: "от 199 ₽", time: "45–60 минут", desc: "Доставляем горячим в термосумке. Минимальный заказ 800 ₽", features: ["🌡️ Термосумка", "📍 Весь город", "🕐 Пн–Вс 11:00–23:00"] },
-              { type: "pickup" as DeliveryType, icon: "MapPin", title: "Самовывоз", price: "Бесплатно", time: "20 минут", desc: "Забери готовый заказ в ресторане. Скидка 5% при самовывозе", features: ["💸 Скидка 5%", "🏠 Ул. Мясная, 1", "🕐 Пн–Вс 11:00–00:00"] },
+              { type: "delivery" as DeliveryType, icon: "Truck", title: "Доставка", price: "от 199 ₽", time: "45–60 минут", desc: "Доставляем горячим в термосумке. Минимальный заказ 800 ₽", features: ["🌡️ Термосумка", "📍 Весь город", "🕐 Ежедневно 10:00–23:00"] },
+              { type: "pickup" as DeliveryType, icon: "MapPin", title: "Самовывоз", price: "Бесплатно", time: "20 минут", desc: "Забери готовый заказ в ресторане. Скидка 5% при самовывозе", features: ["💸 Скидка 5%", "🏠 Ангарская, 51/2", "🕐 Ежедневно 10:00–23:00"] },
             ].map(opt => (
               <div key={opt.type} onClick={() => setDeliveryType(opt.type)} className={`cursor-pointer border-2 rounded-2xl p-8 transition-all duration-300 ${deliveryType === opt.type ? "border-[hsl(var(--fire))] bg-[hsl(var(--fire))]/10 shadow-[0_0_30px_hsl(22,100%,55%,0.2)]" : "border-border bg-card hover:border-[hsl(var(--fire))]/40"}`}>
                 <div className="flex items-center gap-4 mb-4">
@@ -403,10 +403,10 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-4">
               {[
-                { icon: "Phone", label: "Телефон", value: "+7 (999) 123-45-67", sub: "Звонки и WhatsApp" },
-                { icon: "MapPin", label: "Адрес", value: "ул. Мясная, 1", sub: "Центр города, парковка рядом" },
-                { icon: "Clock", label: "Часы работы", value: "11:00 – 00:00", sub: "Без выходных" },
-                { icon: "Send", label: "Соцсети", value: "@mangalhouse", sub: "ВКонтакте, Telegram" },
+                { icon: "Phone", label: "Телефон", value: "+7 (3952) 60–38–15", sub: "+7 952 629-47-12" },
+                { icon: "MapPin", label: "Адрес", value: "Ангарская, 51/2", sub: "Иркутск" },
+                { icon: "Clock", label: "Часы работы", value: "10:00 – 23:00", sub: "Ежедневно, без выходных" },
+                { icon: "Send", label: "Соцсети", value: "@shashlikhouse38", sub: "ВКонтакте, Telegram" },
               ].map(c => (
                 <div key={c.label} className="bg-card border border-border rounded-2xl p-6 flex items-center gap-5 hover:border-[hsl(var(--fire))]/40 transition-all">
                   <div className="w-12 h-12 rounded-xl bg-[hsl(var(--fire))]/20 flex items-center justify-center shrink-0">
